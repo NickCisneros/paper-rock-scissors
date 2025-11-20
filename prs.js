@@ -12,15 +12,18 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let answer = prompt("Rock, Paper, or Scissors?")
+    let answer = prompt("rock, paper, or scissors?")
 
     if (answer === null) {
-        return "Not this time, Gamer!"
-    } else if (answer.toLowerCase() === "rock") {
+        return "Come on, Gamer!"
+    } else if (answer === "rock") {
         return "Rock"
-    } else if (answer.toLowerCase() === "paper") {
+    } else if (answer === "paper") {
         return "Paper"
-    } else if (answer.toLowerCase() === "scissors") {
+    } else if (answer === "scissors") {
         return "Scissors"
     }
 }
+
+let humanScore = 0;
+let computerScore = 0;
