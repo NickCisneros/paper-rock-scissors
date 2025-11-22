@@ -29,26 +29,32 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
-    if (humanSelection === computerSelection) {
+    if (humanChoice === computerChoice) {
         return "Tie!";
-    } else if ((humanSelection === "rock") && (computerSelection === "paper")) {
+    } else if ((humanChoice === "rock") && (computerChoice === "paper")) {
         computerScore++;
-        return "Computer wins!"
-    } else if ((humanSelection === "paper") && (computerSelection === "scissors")) {
+        console.log("Computer wins!");
+        return "Computer wins!";
+    } else if ((humanChoice === "paper") && (computerChoice === "scissors")) {
         computerScore++;
-        return "Computer wins!"
-    } else if ((humanSelection === "scissors") && (computerSelection === "rock")) {
+        console.log("Computer wins!");
+        return "Computer wins!";
+    } else if ((humanChoice === "scissors") && (computerChoice === "rock")) {
         computerScore++;
-        return "Computer wins!"
-    } else if ((humanSelection === "rock") && (computerSelection === "scissors")) {
+        console.log("Computer wins!");
+        return "Computer wins!";
+    } else if ((humanChoice === "rock") && (computerChoice === "scissors")) {
         humanScore++;
-        return "Human wins!"
-    } else if ((humanSelection === "paper") && (computerSelection === "rock")) {
+        console.log("Human wins!");
+        return "Human wins!";
+    } else if ((humanChoice === "paper") && (computerChoice === "rock")) {
         humanScore++;
-        return "Human wins!"
-    } else if ((humanSelection === "scissors") && (computerSelection === "paper")) {
+        console.log("Human wins!");
+        return "Human wins!";
+    } else if ((humanChoice === "scissors") && (computerChoice === "paper")) {
         humanScore++;
-        return "Human wins!"
+        console.log("Human wins!");
+        return "Human wins!";
     }
 }
 
