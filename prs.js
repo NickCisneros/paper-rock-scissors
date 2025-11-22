@@ -28,20 +28,26 @@ function getHumanChoice() {
 let humanScore = 0;
 let computerScore = 0;
 
-function playground(humanChoice, computerChoice) {
+function playRound(humanChoice, computerChoice) {
     if (humanSelection === computerSelection) {
-        return "Tie!"
+        return "Tie!";
     } else if ((humanSelection === "rock") && (computerSelection === "paper")) {
+        computerScore++;
         return "Computer wins!"
     } else if ((humanSelection === "paper") && (computerSelection === "scissors")) {
+        computerScore++;
         return "Computer wins!"
     } else if ((humanSelection === "scissors") && (computerSelection === "rock")) {
+        computerScore++;
         return "Computer wins!"
     } else if ((humanSelection === "rock") && (computerSelection === "scissors")) {
+        humanScore++;
         return "Human wins!"
     } else if ((humanSelection === "paper") && (computerSelection === "rock")) {
+        humanScore++;
         return "Human wins!"
     } else if ((humanSelection === "scissors") && (computerSelection === "paper")) {
+        humanScore++;
         return "Human wins!"
     }
 }
@@ -49,7 +55,7 @@ function playground(humanChoice, computerChoice) {
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-console.log(playground(humanSelection, computerSelection))
+console.log(playRound(humanSelection, computerSelection))
 
 
 
