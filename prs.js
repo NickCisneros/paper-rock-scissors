@@ -16,9 +16,9 @@ function getHumanChoice() {
 
     if (answer.toLowerCase() === "rock") {
         return "rock"
-    } else if (answer === "paper") {
+    } else if (answer.toLowerCase() === "paper") {
         return "paper"
-    } else if (answer === "scissors") {
+    } else if (answer.toLowerCase() === "scissors") {
         return "scissors"
     } else { 
         return "I failed!" 
