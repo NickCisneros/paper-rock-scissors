@@ -23,3 +23,29 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 */
+
+
+ /*
+    const humanSelectionOne = getHumanChoice();
+    const computerSelectionOne = getComputerChoice();
+    playRound(humanSelectionOne, computerSelectionOne);
+
+    const humanSelectionTwo = getHumanChoice();
+    const computerSelectionTwo = getComputerChoice();
+    playRound(humanSelectionTwo, computerSelectionTwo);
+    
+    const humanSelectionThree = getHumanChoice();
+    const computerSelectionThree = getComputerChoice();
+    playRound(humanSelectionThree, computerSelectionThree);
+
+    const humanSelectionFour = getHumanChoice();
+    const computerSelectionFour = getComputerChoice();
+    playRound(humanSelectionFour, computerSelectionFour);
+
+    const humanSelectionFive = getHumanChoice();
+    const computerSelectionFive = getComputerChoice();
+    playRound(humanSelectionFive, computerSelectionFive);
+
+    const humanSelection = getHumanChoice()
+    const computerSelection = getComputerChoice()
+    */
