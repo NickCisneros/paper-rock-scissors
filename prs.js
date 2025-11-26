@@ -25,6 +25,7 @@ function getHumanChoice() {
     }
 }
 
+
 function playGame() {
 
     let humanScore = 0;
@@ -63,10 +64,16 @@ function playGame() {
     playRound(getHumanChoice(), getComputerChoice());
     playRound(getHumanChoice(), getComputerChoice());
     playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());   
     playRound(getHumanChoice(), getComputerChoice());
-
+    playRound(getHumanChoice(), getComputerChoice());
+    
+    if (humanScore > computerScore) {
+        console.log("Human wins the game! GG!")
+    } else if (humanScore < computerScore) {
+        console.log("Computer wins the game! BG!")
+    } else if (humanScore === computerScore) {
+        console.log("Tie game! Try again!")
+    }
 }
-
 
 playGame()
