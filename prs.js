@@ -53,7 +53,7 @@ function playGame() {
         } else if (humanChoice === "scissors") {
             if (computerChoice === "rock") {
                 computerScore++;
-                console.log("Scissors loses to rock! Computer wins!")
+                console.log("Scissors loses to rock! Computer wins!");
             } else if (computerChoice === "paper") {
                 humanScore++;
                 console.log("Scissors beats paper! Human wins!");
@@ -68,12 +68,13 @@ function playGame() {
     playRound(getHumanChoice(), getComputerChoice());
     
     if (humanScore > computerScore) {
-        console.log("Human wins the game! GG!")
+        console.log("Human wins the game! GG!");
     } else if (humanScore < computerScore) {
-        console.log("Computer wins the game! BG!")
+        console.log("Computer wins the game! BG!");
     } else if (humanScore === computerScore) {
-        console.log("Tie game! Try again!")
+        console.log("Tie game! Try again!");
     }
+
 }
 
 playGame()
